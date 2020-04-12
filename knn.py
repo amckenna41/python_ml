@@ -14,7 +14,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Class']
 # dataset = pd.read_csv(url, names=names)
 dataset = pd.read_csv("iris.data", names = names);
 
-dataset.head();
+print(dataset.head());
 #print(dataset)
 
 #get required columns for x and y, splitting data into attributes and labels
