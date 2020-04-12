@@ -47,7 +47,9 @@ for i in range(0, len(num_trees)):
     #model = RandomForestClassifier(n_estimators=num_trees[i])
     model.fit(X_train, y_train)
     rf_pred = model.predict(X_test)
+    # print(rf_pred)
     print("Accuracy with " + str(num_trees[i]) + ' trees is ' + str(metrics.accuracy_score(y_test, rf_pred)))
+
 
 #Creating model and calculating ROC Value
 
